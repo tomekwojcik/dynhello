@@ -1,0 +1,32 @@
+<div class="page-header">
+    <h2>Guestbook</h2>
+</div>
+
+<p class="lead">Guestbook entries so far: <a href="#new" class="btn btn-mini btn-primary pull-right"><i class="icon-plus icon-white"></i> New entry</a></p>
+
+<%= if Enum.empty?(@entries) do %>
+    <div class="alert alert-info"><strong>No entries yet.</strong> How about adding one?</div>
+<%= else %>
+    <%= Enum.map_join @entries, fn entry -> render("guestbook/entry.html", entry: entry) end %>
+    <p style="text-align: center;">
+        <%= if @offset <= 0 do %>
+            <span>&laquo; Previous</span>
+        <%= else %>
+            <a href="/guestbook/?offset=<%= @offset - 10 %>">&laquo; Previous</a>
+        <%= end %>
+        <%= if @offset + 10 <= @entries_count do %>
+            &bull; <span>Showing entries <%= @offset + 1 %> to <%= @offset + 10 %> from <%= @entries_count %></span> &bull;
+        <%= else %>
+            &bull; <span>Showing entries <%= @offset + 1 %> to <%= @entries_count %> from <%= @entries_count %></span> &bull;
+        <%= end %>
+        <%= if @offset >= @entries_count - 10 do %>
+            <span>Next &raquo;</span>
+        <%= else %>
+            <a href="/guestbook/?offset=<%= @offset + 10 %>">Next &raquo;</a>
+        <%= end %>
+    </p>
+<%= end %>
+
+<hr>
+
+<%= render("guestbook/form.html", errors: [], name: @name) %>

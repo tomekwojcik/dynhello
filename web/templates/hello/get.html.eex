@@ -1,0 +1,25 @@
+<div class="page-header">
+    <h2>Hello</h2>
+</div>
+
+<p class="lead">Let the application say hello to you :).</p>
+
+<form class="form-horizontal" action="/hello" method="post">
+<%= if @no_name do %>
+    <div class="control-group error">
+<%= else %>
+    <div class="control-group">
+<%= end %>
+        <label class="control-label" for="input-name">Your name</label>
+        <div class="controls">
+            <input id="input-name" class="input-xlarge" type="text" placeholder="?" name="name" value="<%= @name %>">
+        <%= if @no_name do %>
+            <span class="help-block">Enter your name you must.</span>
+        <%= end %>
+        </div>
+    </div>
+    
+    <div class="form-actions">
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+</form>

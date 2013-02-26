@@ -1,0 +1,14 @@
+<div class="page-header">
+    <h2>About DynHello!</h2>
+</div>
+
+<p class="lead">DynHello is a demo application written in <a href="http://www.elixir-lang.org/">Elixir</a> using <a href="https://github.com/elixir-lang/dynamo">Dynamo</a> Web framework.</p>
+
+<h3>But why?</h3>
+<p>For fun, for practice, for gentle introduction into Dynamo Web framework for Elixir.</p>
+
+<h3>Who wrote it?</h3>
+<p>DynHello! was written by Tomek Wójcik. <a href="https://github.com/tomekwojcik">See his profile on GitHub</a> or <a href="http://www.tomekwojcik.com/">visit his Web site</a>.</p>
+
+<h3>What is the license?</h3>
+<p>DynHello! is licensed under MIT License. <a href="https://github.com/tomekwojcik/dynhello/blob/master/LICENSE">See full license text.</a></p>

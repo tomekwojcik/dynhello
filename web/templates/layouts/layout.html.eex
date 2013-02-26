@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DynHello!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A demo application written in Elixir using Dynamo Web framework.">
+        <meta name="author" content="Tomek Wójcik <tomek@bthlabs.pl>">
+
+        <link href="/static/css/bootstrap.css" rel="stylesheet">
+        <link href="/static/css/dynhello.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/static/favicon.ico">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="masthead">
+                <h3 class="muted">DynHello!</h3>
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container">
+                            <ul class="nav">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="https://github.com/tomekwojcik/dynhello">Source Code</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%= content_for(:template) %>
+
+            <hr>
+
+            <div class="footer">
+                <p>DynHello! &copy; 2013 by <a href="http://www.tomekwojcik.com/">Tomek Wójcik</a>. All rights reserved. &bull; <a href="https://github.com/tomekwojcik/dynhello/blob/master/LICENSE">LICENSE</a></p>
+            </div>
+        </div>
+    </body>
+</html>

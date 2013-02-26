@@ -1,0 +1,7 @@
+<div class="page-header">
+    <h2>Hello, <%= h(@name) %>!</h2>
+</div>
+
+<p class="lead">Have a nice day :).</p>
+
+<p><a class="btn" href="/hello">&laquo; Back</a></p>

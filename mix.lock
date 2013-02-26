@@ -1,0 +1,9 @@
+[ "bson": {:git,"https://github.com/mongodb/bson-erlang.git","6d3cc910eac6d4c21402427b41c411e201eca424",[]},
+  "cowboy": {:git,"https://github.com/extend/cowboy.git","a3049f7100bb9f3cbaef1db6bf6cdeb750d9e298",[]},
+  "dynamo": {:git,"https://github.com/elixir-lang/dynamo.git","e6c2831e874ea9cde1c5366671545f80422cebbe",[]},
+  "edown": {:git,"https://github.com/esl/edown.git","35f8296a25d14c5c1e3209399a2c1856700d9d5b",[]},
+  "hackney": {:git,"https://github.com/benoitc/hackney.git","2d69d7ce52d06ecc360b104dcb978da3e24ce304",[]},
+  "mimetypes": {:git,"https://github.com/spawngrid/mimetypes.git","e9dfab5aec98963589ecf13bdfcf0490667a730d",[]},
+  "mongodb": {:git,"https://github.com/mongodb/mongodb-erlang.git","4f330e6babb0022f83fdc0d8a4df6514254162dd",[]},
+  "mongoex": {:git,"https://github.com/tomekwojcik/mongoex.git","8c4c08932d235eb7c0a7ecd6ac432d6fddcef2ff",[]},
+  "ranch": {:git,"https://github.com/extend/ranch.git","c3133bfbc324fbb9ac26ab689cd41dc362ad7c05",[]} ]

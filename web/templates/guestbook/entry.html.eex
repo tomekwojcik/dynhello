@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="span3">
+        <p><strong><%= h(@entry.author()) %></strong></p>
+        <p><em><small><%= h(@entry.created_at()) %></small></em></p>
+    </div>
+    <div class="span6">
+        <p><%= h(@entry.entry()) %></p>
+    </div>
+</div>

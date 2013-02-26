@@ -1,0 +1,17 @@
+config :dynamo,
+    # For testing we compile modules on demand,
+    # but there isn't a need to reload them.
+    compile_on_demand: true,
+    reload_modules: false,
+    session_store: Session.CookieStore,
+    session_options: [
+        key: "_dynhello_session",
+        secret: "0123456789012345678901234567890123456789012345678901234567890123"
+    ]
+
+config :mongo,
+    address: '127.0.0.1',
+    port: 27017,
+    database: :dynhello_test
+
+config :server, port: 8888

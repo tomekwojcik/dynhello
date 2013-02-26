@@ -1,0 +1,33 @@
+<p id="new" class="lead">New entry</p>
+
+<%= if Enum.empty?(@errors) == false do %>
+    <div class="alert alert-error">Please fill in the highlighted fields.</div>
+<%= end %>
+
+<form class="form-horizontal" action="/guestbook/new" method="post">
+<%= if List.member?(@errors, :author) do %>
+    <div class="control-group error">
+<%= else %>
+    <div class="control-group">
+<%= end %>
+        <label for="input-author" class="control-label">Your name</label>
+        <div class="controls">
+            <input class="input-xlarge" type="text" id="input-author" name="author" value="<%= h(Dict.get(conn.params(), :author, nil) || @name) %>">
+        </div>
+    </div>
+
+<%= if List.member?(@errors, :entry) do %>
+    <div class="control-group error">
+<%= else %>
+    <div class="control-group">
+<%= end %>
+        <label for="input-entry" class="control-label">Your comment</label>
+        <div class="controls">
+            <textarea id="input-entry" class="input-xlarge" rows="3" name="entry"><%= Dict.get(conn.params(), :entry, "") %></textarea>
+        </div>
+    </div>
+
+    <div class="form-actions">
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </div>
+</form>

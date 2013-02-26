@@ -1,0 +1,20 @@
+<div class="jumbotron">
+    <h1>DynHello!</h1>
+    <p class="lead">A demo application written in Elixir using Dynamo Web framework.</p>
+    <a class="btn btn-large btn-success" href="/about.html">Learn more</a>
+</div>
+
+<hr>
+
+<div class="row-fluid">
+    <div class="span6">
+        <h2>Hello</h2>
+        <p>Let the application say hello to you :).</p>
+        <p><a class="pull-right btn" href="/hello">Go &raquo;</a></p>
+    </div>
+    <div class="span6">
+        <h2>Guestbook</h2>
+        <p>Leave a note :).</p>
+        <p><a class="pull-right btn" href="/guestbook/">Go &raquo;</a></p>
+    </div>
+</div>
